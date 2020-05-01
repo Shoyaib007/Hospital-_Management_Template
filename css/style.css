@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+html{
+    scroll-behavior: smooth!important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+ul,
+ol,
+dl {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.clr {
+    clear: both;
+}
+.clr {
+    clear: both;
+}
+.row {
+    margin-right: 0;
+}
+/* Basic typography */
+/*start header top*/
+#header-top {
+    /*! padding: 15px 0; */
+    transition: all 0.7s linear;
+   
+}
+#header-top .title h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #3ca2a2;
+    white-space: nowrap;
+}
+#header-top .phn{
+    margin-top:21px !important;
+}
+#header-top .phn h2{
+    font-size: 15px;
+    font-weight: 600;
+    color: #b76262;
+    margin-left: 135px;
+}
+/*end of header-top*/
+/*start navbar*/
+.main-nav {
+    background-color: #BD0B10 !important;
+    height: 52px;
+    z-index: 180;
+
+}
+
+.main-nav ul li a {
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff!important;
+    margin-right: 25px;
+    position: relative!important;
+    transition: all 0.7s linear!important;
+    padding: 14px 0;
+}
+
+.main-nav ul li a:hover {
+    background-color: #F18D26 !important;
+    color: #215A6D!important;
+    
+}
+.navbar-light .navbar-nav .nav-link.active{
+     background-color: #F18D26 !important;
+     color: #215A6D!important;
+}
+/*
+.main-nav .navbar-nav:after{
+    position: absolute!important;
+    content: ""!important;
+    left:0!important;
+    top:0!important;
+    background-color: rgba(241, 141, 38, 0.1)!important;
+}
+*/
+
+.main-nav .menubar a {
+    margin-right: 5px;
+}
+
+.main-nav .menubar a i {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    border-style: none;
+    color: #C00A11;
+    background-color: #FFFFFF;
+    transition: all 0.7s linear;
+}
+
+.main-nav .menubar a i:hover {
+    color: #F18D26;
+}
+
+/*end of navbar*/
+/*start banner*/
+#banner .slider1, #banner .slider2, #banner .slider3, #banner .slider4 {
+    background: url("../images/bannerimg.png") left top no-repeat;
+    background-size: cover;
+    padding: 75px 0;
+}
+
+#banner .banner-art h2 {
+    font-weight: 600;
+    font-size: 36px;
+    font-style: italic;
+    color: #215a6d;
+}
+
+#banner .banner-art h2 span {
+    font-size: 48px;
+    display: block;
+}
+
+#banner .banner-art p {
+
+    font-weight: 400;
+    font-size: 16px;
+    color: #215a6d;
+    line-height: 22px;
+    display: block;
+    width: 350px;
+}
+
+#banner {
+    margin-right: 0 !important;
+    /*    here we use row1 class for reduce extra margin*/
+    margin-top: -15px;
+}
+
+#banner .banner-art .btn {
+    background-color: #92C7A3;
+    color: #fff;
+    border-radius: 30px;
+    margin-top: 40px;
+}
+
+/*end of banner part*/
+/*start about-us part*/
+#about .single-art h3 {
+    font-weight: 600;
+    color: #3ca2a2;
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+#about .single-art img {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    transition: all 0.3s linear;
+}
+.single-art:hover img{
+    transform: scale(1.1);
+}
+
+#about .single-art p {
+    font-weight: 400;
+    font-size: 13px;
+    color: #215a6d;
+    line-height: 20.4px;
+    padding-right: 10%;
+}
+
+#about .single-art h4 {
+    font-weight: 400;
+    color: #92c7a3;
+    position: relative;
+    font-size: 14px;
+}
+
+#about .single-art h4 i {
+    position: absolute;
+    left: 22%;
+    top: 23%;
+    color: #BF0A11;
+}
+
+/*end of about us part*/
+/*start of department*/
+#department {
+    padding: 25px 0;
+    background-color: #DFECE6;
+}
+
+#department .content h2 {
+    font-weight: 400;
+    font-size: 28.51px;
+    color: #215a6d;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#department .content h2 .sline{
+    position: absolute !important;
+    height: 3px !important;
+    width: 100%;
+    left: 0;
+    bottom: -58%;
+    background-color: #fff;
+    transition: all 0.71s linear;
+    /*! position: relative !important; */
+}
+#department .content h2 .slbefore{
+    position: relative;
+}
+#department .content h2 .slbefore:after{
+    position: absolute;
+   width:0;
+    height:3px;
+    left:0;
+    top:0;
+    background-color:red;
+    content: "";
+    opacity: 0;
+    transition:all 0.25s linear;
+    
+}
+#department .content h2:hover .slbefore:after{
+     width:10%;
+    opacity: 1;
+   
+}
+
+#department ul li {
+    font-weight: 600;
+    font-size: 16px;
+    color: #3ca2a2;
+    background-color: #FFFFFF;
+    position: relative;
+    padding: 15px 10px;
+    border-bottom: 1px solid #5BBFCF;
+}
+
+#department ul li i {
+    width: 54px;
+    height: 54px;
+    line-height: 54px;
+    color: #fff;
+    background-color: #BF0A11;
+    text-align: center;
+    font-size: 30px;
+}
+
+#department ul li i {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#department .content .feature-video video {
+    height: 275px;
+}
+
+#department .content .menubar .views {
+    margin-top: 25px;
+    color: #BF0A11;
+    text-decoration: none;
+}
+
+/*end of department*/
+/*start of service part*/
+#service {
+    padding: 65px 0;
+    background-color: ;
+}
+
+#service .content h2 {
+    font-weight: 400;
+    font-size: 28.51px;
+    color: #215a6d;
+    position: relative;
+    margin-bottom: 52px;
+}
+
+#service .content h2 .sline1 {
+    position: absolute;
+    height: 3px !important;
+    width: 100%;
+    left: 2px;
+    top: 20px;
+    background-color: #EAEAEA;
+    transition: all 0.21s linear;
+}
+#service .content h2 .slbefore1{
+    position: relative;
+}
+#service .content h2 .slbefore1:before{
+     position: absolute;
+   width:0;
+    height:3px;
+    left:0;
+    top:0;
+    background-color:red;
+    content: "";
+    opacity: 0;
+    transition:all 0.25s linear;
+    content: "";
+}
+#service .content h2:hover .slbefore1:before{
+    opacity: 1;
+    width:15%;
+}
+
+#service .content h2 .
+
+#service .content .single-art {
+    margin-top: 40px;
+}
+
+#service .content .single-art h3 {
+    font-weight: 600;
+    color: #3ca2a2;
+    font-size: 24px;
+    margin-top: 33px;
+}
+
+#service .content .single-art p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #215a6d;
+    line-height: 22px;
+    display: block;
+    width: 350px;
+}
+
+#service .content .borderClass {
+    border-bottom: 2px solid #18476d;
+    margin-top: 20px !important;
+}
+
+#service .content .views {
+    margin-top: 40px;
+    color: #BF0A11;
+    text-decoration: none;
+    display: block;
+}
+
+#service .content .mtop {
+    margin-top: 127px;
+}
+
+#service .content .service-menu ul {
+    /*! list-style: lower-roman; */
+}
+
+#service .content .service-menu ul li {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 29px;
+    color: #215a6d;
+    position: relative;
+    margin-left: 30px;
+}
+
+#service .content .service-menu ul li i {
+    position: absolute;
+    left: -23px;
+    font-size: 18px;
+    color: #BF0A11;
+}
+
+#service .photo {
+    width: 100%;
+}
+
+#service .photo .single-img {
+    width: 40%;
+    float: left;
+    margin-right: 4%;
+    margin-top: 2%;
+}
+
+#service .photo .single-img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#service .content .lastmtop {
+    margin-top: 123px;
+}
+
+/*end of service part*/
+/*start of doctor part*/
+#doctor {
+    margin-top: 83px;
+}
+
+#doctor .title h2 {
+    font-weight: 400;
+    font-size: 28.51px;
+    color: #215a6d;
+    position: relative;
+    margin-bottom: 52px;
+}
+
+
+#doctor .title h2 .sline2 {
+    content: "";
+    position: absolute;
+    height: 3px !important;
+    width: 100%;
+    left: 2px;
+    bottom: -21px;
+    background-color: #EAEAEA;
+    transition: all 0.21s linear;
+}
+#doctor .title h2 .slbefore2{
+    position: relative;
+}
+#doctor .title h2 .slbefore2:before{
+    position: absolute;
+    content:"";
+    width:0;
+    height:3px;
+    left:0;
+    top:0;
+    background-color:red;
+    content: "";
+    opacity: 0;
+    transition:all 0.25s linear;
+}
+#doctor .title h2:hover .slbefore2:before{
+    opacity: 1;
+    width:15%;
+}
+
+#doctor .photo-art h3 {
+    font-weight: 600;
+    color: #3ca2a2;
+    font-size: 18px;
+    padding-top: 15px;
+    white-space: nowrap;
+}
+#doctor .photo-art .dr_img img{
+    transition: all 0.3s linear;
+    width:100%;
+    height:100%;
+}
+#doctor .photo-art:hover .dr_img img{
+    transform: scale(1.1);
+} 
+
+#doctor .photo-art p {
+    font-weight: 400;
+    font-size: 12px;
+    color: #878787;
+    white-space: nowrap;
+    padding-top: 0;
+}
+
+#doctor .photo-art p span {
+    display: block;
+    color: #cf0511;
+    white-space: nowrap;
+}
+
+/*end of doctor*/
+/*start of footer */
+#contact {
+    margin-top: 100px;
+    padding-top: 21px;
+    padding-bottom: 42px;
+    background-color: #222222;
+}
+
+#contact .ftitle h2 {
+    color: #3CA2A2;
+    font-size: 25px;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-top: 29px;
+}
+
+#contact .mtitle h2 {
+    font-weight: 400;
+    font-size: 28.51px;
+    color: #215a6d;
+}
+
+#contact .menutitle {
+    margin-left: 21px;
+}
+
+#contact .menutitle ul {}
+
+#contact .menutitle ul li {}
+
+#contact .menutitle ul li a {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #c6ded9;
+    white-space: nowrap;
+    text-decoration: none;
+    position: relative;
+}
+
+#contact .menutitle ul li a i {
+    font-size: 20px;
+    color: #CF0511;
+    position: absolute;
+    left: -14px;
+    top: 0;
+}
+
+#contact .address ul li a i {
+    top: 0px;
+    position: absolute;
+    /*! right: 49px; */
+    left: -31px;
+}
+/*end of contract*/
+/*start of footer*/
+#footer {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    background-color: #CF0511;
+}
+#footer .row {
+    margin-right: 0 !important;
+    /*    here i use row1 class for reduceing extra margin*/
+}
+#footer .footer-art p {
+    font-size: 14px;
+    color: #c6ded9;
+    font-weight: 400;
+}
+/*end of footer*/
+.top i{
+    width:50px;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+    border-radius:10px;
+    position: fixed;
+    right:5%;
+    bottom:10%;
+    color: #fff;
+    background-color: #BF0A11;
+    border-style:none;
+    border:2px solid #81BDBD;
+    
+}
+/*end of back to top button*/
+/*start slick slider code*/
+.slick-prev, .slick-next{
+    display: none!important;
+}
+/*end slick slider code*/
+/*start sticky menu code*/
+.sticky{
+    position:fixed!important;
+    width:100%;
+    left:0;
+    top:0;
+    z-index: 990;
+    transition: all 0.7s linear;
+    background-color:#fff;
+    margin-top: 10px;
+}
+
